@@ -35,14 +35,14 @@ Deudas number- flotar**
 
 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
-**var nombre = "Juan";
-var apellido = "Pérez";
-var usuarioPlatzi = "juanperez123";
-var edad = 25;
-var correoElectronico = "juan.perez@example.com";
-var mayorDeEdad = true;
-var dineroAhorrado = 5000;
-var deudas = 1500.50;**
+**let nombre = "Juan";
+let apellido = "Pérez";
+let usuarioPlatzi = "juanperez123";
+let edad = 25;
+let correoElectronico = "juan.perez@example.com";
+let mayorDeEdad = true;
+let dineroAhorrado = 5000;
+let deudas = 1500.50;**
 
 
 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
@@ -64,6 +64,7 @@ Funciones
 
 
 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+
 const name = "Juan David";
 const lastname = "Castro Gallego";
 const completeName = name + lastname;
