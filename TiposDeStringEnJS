@@ -28,12 +28,14 @@ const escapeAlternativo="I'm Software Engineer"
 const escapeBarraInvertida='I\'m Software Engineer'
 const escapeComillaInvertida=`I'm Software Engineer`
 
-
+//Hacer saltos de linea 
 const poema='Las rosas son rojas,\n'+
 'Las violetas son azules,\n'+
 'Caracter inesperado,\n'+
 'En la lÃ­nea 86.'
+
 console.log(poema)
+//mismo poema con saltos de linea pero sin necesidad de concatenar
 const poema2='Las rosas son rojas,\n\
 Las violetas son azules,\n\
 Caracter inesperado,\n\
