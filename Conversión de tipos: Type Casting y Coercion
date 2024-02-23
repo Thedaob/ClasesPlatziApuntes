@@ -1,0 +1,75 @@
+Los lenguajes de programación pueden clasificarse generalmente en dos categorías según cómo se ejecutan sus programas: 
+lenguajes compilados y lenguajes interpretados. Aquí hay una breve descripción de cada uno:
+
+Lenguajes Compilados:
+
+En los lenguajes compilados, el código fuente escrito por el programador se traduce completamente a un código de máquina o a un código intermedio por un 
+programa llamado compilador antes de la ejecución. El resultado de esta traducción es un archivo ejecutable que puede ser ejecutado directamente por la máquina objetivo,
+sin necesidad de tener el código fuente presente. Los errores se detectan durante la fase de compilación, y el código se ejecuta generalmente de manera más eficiente. Ejemplos
+de lenguajes compilados incluyen C, C++, Rust, y Fortran. Lenguajes Interpretados:
+
+En los lenguajes interpretados, el código fuente se ejecuta directamente por un intérprete, que es un programa que lee y ejecuta el código línea por línea en tiempo de ejecución. 
+No se produce un archivo ejecutable independiente; en su lugar, el intérprete ejecuta el código directamente desde el código fuente.
+Los errores pueden detectarse durante la ejecución, y el código a menudo es más portátil entre plataformas, ya que el intérprete puede adaptarse a diferentes entornos. 
+Ejemplos de lenguajes interpretados incluyen Python, JavaScript, Ruby, y PHP.
+
+Es importante tener en cuenta que esta distinción entre lenguajes compilados e interpretados no siempre es estricta.
+Algunos lenguajes, como Java, combinan ambas técnicas. Java utiliza un enfoque híbrido donde el código fuente se compila a un formato intermedio (bytecode) 
+que luego se ejecuta en una máquina virtual (Java Virtual Machine, JVM) mediante un intérprete. Este enfoque proporciona algunas ventajas de ambos mundos, como portabilidad y rendimiento.
+
+
+*Conversión explícita* (Casting): Se refiere a cuando convertimos explícitamente un tipo de dato en otro. Esto se hace mediante funciones como ```js ````Number(), String(), o Boolean()`, o mediante
+construcciones específicas de JavaScript. Es un proceso controlado por el programador, donde se especifica claramente la intención de cambiar el tipo de dato.
+*Conversión implícita* (Coerción): Ocurre cuando JavaScript automáticamente convierte un tipo de dato en otro durante la ejecución del código.
+Esto sucede en operaciones donde se combinan tipos de datos diferentes, como en la concatenación de strings y números. JavaScript decide el tipo de conversión
+basándose en las reglas de coerción del lenguaje, y esto puede ocurrir sin una intervención directa o consciente del programador.
+
+//! Explicit Type Casting
+
+const string = '42'
+const integer = parseInt(string)
+console.log(integer)
+console.log(typeof integer)
+
+const stringDecimal = '3.14'
+const float = parseFloat(stringDecimal)
+console.log(float)
+console.log(typeof float)
+
+const binary = '1010'
+const decimal = parseInt(binary, 2)
+console.log(decimal)
+console.log(typeof decimal)
+
+//! Implicit Type Casting
+
+const sum = '5' + 3
+console.log(sum, typeof sum)
+
+const sumWithBoolean = '3' + true
+console.log(sumWithBoolean)
+
+const sumWithNumber = 2 + true
+console.log(sumWithNumber)
+
+//! Ejercicio: ¿Qué hace JavaScript?
+const stringValue = '10'
+const numberValue = 10
+const booleanValue = true
+
+console.log('------------------------------------');
+
+// Combinaciones con stringValue
+console.log(stringValue + stringValue); // CONCATENAR
+console.log(stringValue + numberValue); // CONCATENAR
+console.log(stringValue + booleanValue); // CONCATENAR
+
+// Combinaciones con numberValue
+console.log(numberValue + stringValue); // CONCATENAR
+console.log(numberValue + numberValue); // SUMAR
+console.log(numberValue + booleanValue); // SUMAR
+
+// Combinaciones con booleanValue
+console.log(booleanValue + stringValue); // CONCATENAR
+console.log(booleanValue + numberValue); // SUMAR
+console.log(booleanValue + booleanValue); // SUMAR
